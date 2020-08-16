@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './app.less';
 import {Route, BrowserRouter, NavLink, Switch} from "react-router-dom";
 import Home from "./Home";
+import Calculate from "../component/calculate/Calculate";
 
 class App extends Component {
   render() {
@@ -16,7 +17,7 @@ class App extends Component {
             </ul>
           </nav>
           <Switch>
-            <Route exact path="/calculate" component={Home}></Route>
+            <Route exact path="/calculate" component={Calculate}></Route>
             <Route exact path="/timer" component={Home}></Route>
             <Route exact path="/" component={Home}></Route>
           </Switch>
