@@ -1,7 +1,7 @@
 import React from 'react';
 import './home.less';
 import hero from '../images/hero-image.png';
-import claPic from '../images/calculator.png';
+import calPic from '../images/calculator.png';
 import timerPic from '../images/timer.png';
 import { NavLink } from 'react-router-dom';
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
     <div><img className="heroPic" src={hero}></img></div>
     <div className="body">
       <div className = 'textCenter'>
-        <NavLink to='/calculate'><img className="claPic" src={claPic}></img></NavLink>
+        <NavLink to='/calculate'><img className="calPic" src={calPic}></img></NavLink>
         <NavLink to='/calculate'>在线计算器</NavLink>
       </div>
       <div className = 'textCenter'>
